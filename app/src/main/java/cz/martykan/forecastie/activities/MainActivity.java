@@ -158,6 +158,8 @@ public class MainActivity extends BaseActivity implements LocationListener {
         Typeface weatherFont = Typeface.createFromAsset(this.getAssets(), "fonts/weather.ttf");
         todayIcon.setTypeface(weatherFont);
 
+        // TODO change, add "clouds" and "visibility" here and in all corresponding methods
+
         // Initialize viewPager
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         tabLayout = (TabLayout) findViewById(R.id.tabs);

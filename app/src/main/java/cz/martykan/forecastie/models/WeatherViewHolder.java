@@ -26,5 +26,6 @@ public class WeatherViewHolder extends RecyclerView.ViewHolder {
         this.itemHumidity = (TextView) view.findViewById(R.id.itemHumidity);
         this.itemIcon = (TextView) view.findViewById(R.id.itemIcon);
         this.lineView = view.findViewById(R.id.lineView);
+        // TODO add clouds and humidity
     }
 }

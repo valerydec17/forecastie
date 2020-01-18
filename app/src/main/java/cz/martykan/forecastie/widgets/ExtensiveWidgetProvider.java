@@ -50,6 +50,8 @@ public class ExtensiveWidgetProvider extends AbstractWidgetProvider {
 
             DateFormat timeFormat = android.text.format.DateFormat.getTimeFormat(context);
 
+            // TODO widget for clouds and visibility is awaited
+
             remoteViews.setTextViewText(R.id.widgetCity, widgetWeather.getCity() + ", " + widgetWeather.getCountry());
             remoteViews.setTextViewText(R.id.widgetTemperature, widgetWeather.getTemperature());
             remoteViews.setTextViewText(R.id.widgetDescription, widgetWeather.getDescription());

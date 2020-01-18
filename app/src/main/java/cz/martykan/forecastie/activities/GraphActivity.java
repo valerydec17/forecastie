@@ -56,6 +56,8 @@ public class GraphActivity extends BaseActivity {
 
     private boolean darkTheme = false;
 
+    // TODO graphs for clouds and visibility should be done here, if really needed
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         sp = PreferenceManager.getDefaultSharedPreferences(this);

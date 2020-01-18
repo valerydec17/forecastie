@@ -207,5 +207,7 @@
             </RelativeLayout>
         </android.support.v7.widget.CardView>
 
+        <!-- TODO add graph with clouds and visibility here, if needed -->
+
     </LinearLayout>
 </ScrollView>
