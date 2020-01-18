@@ -31,6 +31,8 @@ public class Weather {
     private double lon;
     private double uvIndex;
 
+    // TODO add clouds "clouds":{"all":20}, visibility "visibility":10000
+
     public enum WindDirection {
         // don't change order
         NORTH, NORTH_NORTH_EAST, NORTH_EAST, EAST_NORTH_EAST,
