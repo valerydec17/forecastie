@@ -108,7 +108,6 @@ public class AmbiguousLocationDialogFragment extends DialogFragment implements L
                 final double lat = coordObject.getDouble("lat");
                 final double lon = coordObject.getDouble("lon");
 
-                // TODO parsing of JSON object add clouds and visibility
                 calendar.setTimeInMillis(Long.parseLong(dateMsString));
 
                 Weather weather = new Weather();
