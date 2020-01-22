@@ -13,6 +13,8 @@ public class WeatherViewHolder extends RecyclerView.ViewHolder {
     public TextView itemyWind;
     public TextView itemPressure;
     public TextView itemHumidity;
+    public TextView itemClouds;
+    public TextView itemVisibility;
     public TextView itemIcon;
     public View lineView;
 
@@ -24,8 +26,10 @@ public class WeatherViewHolder extends RecyclerView.ViewHolder {
         this.itemyWind = (TextView) view.findViewById(R.id.itemWind);
         this.itemPressure = (TextView) view.findViewById(R.id.itemPressure);
         this.itemHumidity = (TextView) view.findViewById(R.id.itemHumidity);
+        this.itemClouds = (TextView) view.findViewById(R.id.itemClouds);
+        this.itemVisibility = (TextView) view.findViewById(R.id.itemVisibility);
         this.itemIcon = (TextView) view.findViewById(R.id.itemIcon);
         this.lineView = view.findViewById(R.id.lineView);
-        // TODO add clouds and humidity
+        // TODO - done, add clouds and humidity
     }
 }

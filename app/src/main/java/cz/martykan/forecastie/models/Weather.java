@@ -21,6 +21,8 @@ public class Weather {
     private Double windDirectionDegree;
     private String pressure;
     private String humidity;
+    private String clouds;
+    private String visibility;
     private String rain;
     private String id;
     private String icon;
@@ -31,7 +33,7 @@ public class Weather {
     private double lon;
     private double uvIndex;
 
-    // TODO add clouds "clouds":{"all":20}, visibility "visibility":10000
+    // TODO - done, add clouds "clouds":{"all":20}, visibility "visibility":10000
 
     public enum WindDirection {
         // don't change order
@@ -154,6 +156,22 @@ public class Weather {
 
     public void setHumidity(String humidity) {
         this.humidity = humidity;
+    }
+
+    public String getClouds() {
+        return clouds;
+    }
+
+    public void setClouds(String clouds) {
+        this.clouds = clouds;
+    }
+
+    public String getVisibility() {
+        return visibility;
+    }
+
+    public void setVisibility() {
+        this.visibility = visibility;
     }
 
     public Date getSunrise(){

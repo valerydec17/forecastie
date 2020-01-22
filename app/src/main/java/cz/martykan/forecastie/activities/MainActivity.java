@@ -87,6 +87,8 @@ public class MainActivity extends BaseActivity implements LocationListener {
     private TextView todayWind;
     private TextView todayPressure;
     private TextView todayHumidity;
+    private TextView todayClouds;
+    private TextView todayVisibility;
     private TextView todaySunrise;
     private TextView todaySunset;
     private TextView todayUvIndex;
@@ -150,6 +152,8 @@ public class MainActivity extends BaseActivity implements LocationListener {
         todayWind = (TextView) findViewById(R.id.todayWind);
         todayPressure = (TextView) findViewById(R.id.todayPressure);
         todayHumidity = (TextView) findViewById(R.id.todayHumidity);
+        todayClouds = (TextView) findViewById(R.id.todayClouds);
+        todayVisibility = (TextView) findViewById(R.id.todayVisibility);
         todaySunrise = (TextView) findViewById(R.id.todaySunrise);
         todaySunset = (TextView) findViewById(R.id.todaySunset);
         todayUvIndex = (TextView) findViewById(R.id.todayUvIndex);
@@ -158,7 +162,7 @@ public class MainActivity extends BaseActivity implements LocationListener {
         Typeface weatherFont = Typeface.createFromAsset(this.getAssets(), "fonts/weather.ttf");
         todayIcon.setTypeface(weatherFont);
 
-        // TODO change, add "clouds" and "visibility" here and in all corresponding methods
+        // TODO - done, change, add "clouds" and "visibility" here and in all corresponding methods
 
         // Initialize viewPager
         viewPager = (ViewPager) findViewById(R.id.viewPager);
@@ -555,6 +559,8 @@ public class MainActivity extends BaseActivity implements LocationListener {
             longTermTodayWeather = new ArrayList<>();
             longTermTomorrowWeather = new ArrayList<>();
 
+
+            // TODO JSON object is parsed here
             JSONArray list = reader.getJSONArray("list");
             for (i = 0; i < list.length(); i++) {
                 Weather weather = new Weather();
