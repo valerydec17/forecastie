@@ -397,6 +397,7 @@ public class MainActivity extends BaseActivity implements LocationListener {
             }
             todayWeather.setPressure(main.getString("pressure"));
             todayWeather.setHumidity(main.getString("humidity"));
+            todayWeather.setClouds(reader.getJSONObject("clouds").getString("all"));
 
             JSONObject rainObj = reader.optJSONObject("rain");
             String rain;
@@ -508,6 +509,8 @@ public class MainActivity extends BaseActivity implements LocationListener {
         todayPressure.setText(getString(R.string.pressure) + ": " + new DecimalFormat("0.0").format(pressure) + " " +
                 localize(sp, "pressureUnit", "hPa"));
         todayHumidity.setText(getString(R.string.humidity) + ": " + todayWeather.getHumidity() + " %");
+        //todayClouds.setText("Clouds" + ": " + todayWeather.getClouds() + " %");
+        //TODO set today clouds
         todaySunrise.setText(getString(R.string.sunrise) + ": " + timeFormat.format(todayWeather.getSunrise()));
         todaySunset.setText(getString(R.string.sunset) + ": " + timeFormat.format(todayWeather.getSunset()));
         todayIcon.setText(todayWeather.getIcon());
