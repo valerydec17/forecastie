@@ -88,7 +88,6 @@ public class MainActivity extends BaseActivity implements LocationListener {
     private TextView todayPressure;
     private TextView todayHumidity;
     private TextView todayClouds;
-    private TextView todayVisibility;
     private TextView todaySunrise;
     private TextView todaySunset;
     private TextView todayUvIndex;
@@ -153,7 +152,6 @@ public class MainActivity extends BaseActivity implements LocationListener {
         todayPressure = (TextView) findViewById(R.id.todayPressure);
         todayHumidity = (TextView) findViewById(R.id.todayHumidity);
         todayClouds = (TextView) findViewById(R.id.todayClouds);
-        todayVisibility = (TextView) findViewById(R.id.todayVisibility);
         todaySunrise = (TextView) findViewById(R.id.todaySunrise);
         todaySunset = (TextView) findViewById(R.id.todaySunset);
         todayUvIndex = (TextView) findViewById(R.id.todayUvIndex);
@@ -576,7 +574,7 @@ public class MainActivity extends BaseActivity implements LocationListener {
                 weather.setPressure(main.getString("pressure"));
                 weather.setHumidity(main.getString("humidity"));
                 weather.setClouds(listItem.getJSONObject("clouds").getString("all"));
-                // TODO add "visibility" here, "clouds" already done, visibility is not present in the request - that's why i erase it everywhere
+
                 JSONObject rainObj = listItem.optJSONObject("rain");
                 String rain = "";
                 if (rainObj != null) {

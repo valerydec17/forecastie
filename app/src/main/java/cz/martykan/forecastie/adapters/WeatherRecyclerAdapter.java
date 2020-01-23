@@ -126,7 +126,6 @@ public class WeatherRecyclerAdapter extends RecyclerView.Adapter<WeatherViewHold
                 MainActivity.localize(sp, context, "pressureUnit", "hPa"));
         customViewHolder.itemHumidity.setText(context.getString(R.string.humidity) + ": " + weatherItem.getHumidity() + " %");
         customViewHolder.itemClouds.setText(context.getString(R.string.clouds) + ": " + weatherItem.getClouds());
-        customViewHolder.itemVisibility.setText(context.getString(R.string.visibility) + ": " + weatherItem.getClouds());
     }
 
     @Override

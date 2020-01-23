@@ -22,7 +22,6 @@ public class Weather {
     private String pressure;
     private String humidity;
     private String clouds;
-    private String visibility;
     private String rain;
     private String id;
     private String icon;
@@ -162,14 +161,6 @@ public class Weather {
 
     public void setClouds(String clouds) {
         this.clouds = clouds;
-    }
-
-    public String getVisibility() {
-        return visibility;
-    }
-
-    public void setVisibility() {
-        this.visibility = visibility;
     }
 
     public Date getSunrise(){
