@@ -65,14 +65,14 @@
                 android:id="@+id/itemClouds"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="Humidity: 0 %"
+                tools:text="Clouds: 0 %"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/itemVisibility"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="Humidity: 0 %"
+                tools:text="Visibility: 0 %"
                 android:textSize="16sp" />
 
         </LinearLayout>

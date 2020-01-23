@@ -558,7 +558,6 @@ public class MainActivity extends BaseActivity implements LocationListener {
             longTermTomorrowWeather = new ArrayList<>();
 
 
-            // TODO JSON object is parsed here
             JSONArray list = reader.getJSONArray("list");
             for (i = 0; i < list.length(); i++) {
                 Weather weather = new Weather();
@@ -576,7 +575,8 @@ public class MainActivity extends BaseActivity implements LocationListener {
                 }
                 weather.setPressure(main.getString("pressure"));
                 weather.setHumidity(main.getString("humidity"));
-
+                weather.setClouds(listItem.getJSONObject("clouds").getString("all"));
+                // TODO add "visibility" here, "clouds" already done, visibility is not present in the request - that's why i erase it everywhere
                 JSONObject rainObj = listItem.optJSONObject("rain");
                 String rain = "";
                 if (rainObj != null) {
